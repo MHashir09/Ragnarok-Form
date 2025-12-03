@@ -11,48 +11,56 @@
   <body>
     <div id="image-sidebar">
       <div class="logo-bar">
-        <img class="logo" src="" alt="">
-        <h1 class="logo-text"></h1>
+        <div class="logo-container"></div>
+        <h1 class="logo-text">ODIN</h1>
       </div>
     </div>
     <div id="form-section">
-        <div class="introductory-text">
-
-        </div>
+        <p class="introductory-text">
+            From Asgard's throne to the peaks of Mount Ashigara—two legends, two worlds, one arena.
+            Odin's cunning against Kintoki's might.
+            Heaven's judgment hangs in the balance, and only those who dare may bear witness.
+        </p>
         <form class="application-form">
           <div class="input-section">
-          <h1 class="Form-title"></h1>
-          <div class="widget-container">
-            <div>
-
+          <h1 class="Form-title">Claim your place. Secure your seat before the gods decide your fate !</h1>
+            <div class="widget-container">
+              <div>
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" name="firstName" id="firstName" required>
+              </div>
+              <div>
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" id="lastname">
+              </div>
             </div>
-            <div>
-
+            <div class="widget-container">
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <div>
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" pattern="\d{3,15}">
+              </div>
+            </div>
+            <div class="widget-container">
+              <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required>
+              </div>
+              <div>
+                <label for="passwordConfirmation">CONFIRM PASSWORD</label>
+                <input type="password" name="confirmedPassword" id="passwordConfirmation" required>
+              </div>
             </div>
           </div>
-          <div class="widget-container">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
+          <div class="booking-section">
+            <button class="book-ticket-button">Book Ticket</button>
+            <p class="confirm-ticket-notice">
+              Already have a ticket? <a href="https://record-of-ragnarok.fandom.com/wiki/Chapter_109">Verify it here.</a>
+            </p>
           </div>
-          <div class="widget-container">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-          </div>
-        </div>
-        <div class="booking-section">
-          <button class="book-ticket-button"></button>
-          <p class="confirm-ticket-notice">
-
-          </p>
-        </div>
         </form>
     </div>
   </body>
