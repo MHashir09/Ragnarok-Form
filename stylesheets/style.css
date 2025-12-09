@@ -9,9 +9,14 @@
   --focused-input-border-color: var(--secondary-text-color);
   --button-color: #71717a;
   --button-hover-color: #52525b;
+  --button-text-color: var(--secondary-background-color);
   --normal-box-shadow: rgba(0, 0, 0, 0.1);
   --hover-box-shadow: rgba(0, 0, 0, 0.2);
-  --pseudo-elements-color: var(--button-color);
+  --pseudo-elements-color:  var(--button-color);
+  --anchor-color: #9a8fba;
+  --anchor-hover-color: #8ca8c1;
+  --anchor-active-color: #b4a7d6;
+  --anchor-visited-color: #8fb996;
 }
 
 @font-face {
@@ -182,4 +187,50 @@ h1.Form-title {
 
 .widget-container input:user-invalid {
   border-color: var(--invalid-input-border-color);
+}
+
+.booking-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(14px, 0.18vw, 30px);
+}
+
+.book-ticket-button {
+  padding: 0.7rem 3.6rem 0.6rem 3.6rem;
+  border-radius: 0.68rem;
+  border: 1px solid var(--focused-input-border-color);
+  background-color: var(--button-color);
+  cursor: pointer;
+  color: var(--button-text-color);
+  box-shadow: 0 0 10px 7px var(--normal-box-shadow);
+}
+
+.book-ticket-button:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: 5px 8.5px 9px 1px var(--hover-box-shadow);
+}
+
+.book-ticket-button:active {
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+}
+
+.confirm-ticket-notice { margin-top: 1rem; }
+
+.confirm-ticket-notice a:link {
+  text-decoration: none;
+  color: var(--anchor-color);
+}
+
+.confirm-ticket-notice a:visited {
+  color: var(--anchor-visited-color);
+}
+
+.confirm-ticket-notice a:hover {
+  color: var(--anchor-hover-color);
+}
+
+.confirm-ticket-notice a:active {
+  color: var(--anchor-active-color);
 }
